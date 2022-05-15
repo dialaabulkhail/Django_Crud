@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+{% block header %}Create New Snacks{% endblock %}
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Add_Snack">
+</form>
+{% endblock %}

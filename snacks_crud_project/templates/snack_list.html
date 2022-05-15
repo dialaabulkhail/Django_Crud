@@ -1,0 +1,7 @@
+{% extends '_base.html' %}
+{% block header %}This is the snacks list{% endblock %}
+{% block content %}
+{% for snack in snack_list %}
+{{snack.title}}<br>
+{% endfor %}
+{% endblock %}
