@@ -1,1 +1,1 @@
-[Pull request](https://github.com/dialaabulkhail/Django_Crud/pull/1)
+[Pull request](https://github.com/dialaabulkhail/Django_Crud/pull/2)
