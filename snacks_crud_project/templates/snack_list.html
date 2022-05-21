@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+
+{% block header %}This is the snacks list{% endblock %}
+
+{% block content %}
+{% for snack in snack_list %}
+{{snack.title}} | <a href="{% url 'snack_detail' pk=snack.pk %}">Details</a> | <a href="{% url 'snack_delete' pk=snack.pk %}">Delete</a>
+<br>
+{% endfor %}
+{% endblock %}

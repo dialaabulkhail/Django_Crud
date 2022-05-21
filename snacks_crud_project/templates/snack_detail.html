@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% block header %}Detail Page{% endblock %}
+{% block content %}
+{{snack.title}}
+<br>
+Description: {{snack.description}}
+<br>
+Purchaser: {{snack.purchaser}}
+<br>
+<a href="{% url 'snack_update' pk=snack.pk %}">Update Snack details</a>
+<p>{{snack.get_absolute_url}}</p>
+{% endblock %}
